@@ -1,37 +1,44 @@
-## Welcome to GitHub Pages
+<div align="center">
+  <a href="https://github.com/VKCOM">
+    <img width="100" height="100" src="https://avatars3.githubusercontent.com/u/1478241?s=200&v=4">
+  </a>
+  <br>
+  <br>
 
-You can use the [editor on GitHub](https://github.com/Vladoster/hello-word/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+  [![npm][npm]][npm-url]
+  [![deps][deps]][deps-url]
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+</div>
 
-### Markdown
+# VK Mini Apps: @vkontakte/create-vk-mini-app
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## How to install
 
-```markdown
-Syntax highlighted code block
+### Create VK Mini App with gh-pages deploy
 
-# Header 1
-## Header 2
-### Header 3
+`npx @vkontakte/create-vk-mini-app <app-directory-name>`
 
-- Bulleted
-- List
+### Create VK Mini App with Zeit deploy
 
-1. Numbered
-2. List
+Firstly, you have to create Zeit account and connect it with your GitHub profile — https://zeit.co/
 
-**Bold** and _Italic_ and `Code` text
+`npx @vkontakte/create-vk-mini-app <app-directory-name> --zeit`
 
-[Link](url) and ![Image](src)
-```
+### Create VK Mini App with Surge deploy
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Firstly, you have to create Surge account and Surge-domain — https://surge.sh/
 
-### Jekyll Themes
+`npx @vkontakte/create-vk-mini-app <app-directory-name> --surge <surge-domain>`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Vladoster/hello-word/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## How to start work with app
 
-### Support or Contact
+Go to created folder and run:
+`yarn start` || `npm start` — this will start dev server with hot reload on `localhost:10888`.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+`yarn run build` || `npm run build` — this will build production bundle, with tree-shaking, uglify and all this modern fancy stuff
+
+[npm]: https://img.shields.io/npm/v/@vkontakte/create-vk-mini-app.svg
+[npm-url]: https://npmjs.com/package/@vkontakte/create-vk-mini-app
+
+[deps]: https://img.shields.io/david/vkcom/create-vk-mini-app.svg
+[deps-url]: https://david-dm.org/vkcom/create-vk-mini-app
